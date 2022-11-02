@@ -1,0 +1,47 @@
+{
+  "private": false,
+  "main": "index.js",
+  "bin": "bin.js",
+  "version": "1.0.0",
+  "name": "@levakorg/init",
+  "description": "File environment levakorg org's",
+  "author": "levakorg authors <levakorg@gmail.com>",
+  "homepage": "https://github.com/levakorg/init",
+  "repository": "https://github.com/levakorg/init",
+  "bugs": "https://github.com/levakorg/init/issues",
+  "license": "MIT",
+  "keywords": [
+    "file-environment",
+    "create-file-environment"
+  ],
+  "files": [
+    "scripts",
+    "utils",
+    "constants",
+    "LICENSE",
+    "README.md",
+    "TODO.md",
+    "CHANGELOG.md",
+    "bin.js",
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prettier": "prettier check .",
+    "prettier:fix": "prettier --write .",
+    "eslint": "eslint . --ext .json,.cjs,.mjs,.js,.ts,.jsx,.tsx,.vue,.svelte",
+    "eslint:fix": "eslint . --ext .json,.cjs,.mjs,.js,.ts,.jsx,.tsx,.vue,.svelte --fix",
+    "format": "yarn prettier:fix && yarn eslint:fix"
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "@levakorg/eslint-config": "^1.0.1",
+    "@levakorg/prettier-config": "^1.0.0",
+    "eslint": "^8.26.0",
+    "prettier": "^2.7.1"
+  }
+}
